@@ -6,7 +6,7 @@ for(i=1;i<=22;i++){
     var logo_source="images/"+i+".png";
     teamakan.push(logo_source);
 }
-var kk=setInterval(mytimer,100);
+var kk=setInterval(mytimer,50);
 
 function mytimer(){
 
@@ -50,9 +50,8 @@ submit.onclick=function(){
 }
 
 
-// function gun(){
+submit.ondblclick=function(){
 
-//     clearInterval(mytimer);
+    mytimer();
     
-    
-// }
+}

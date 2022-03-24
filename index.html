@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <title>Random Team</title>
+    <title>Fifa Random Genrator</title>
+
 </head>
 
 <style>
@@ -27,17 +28,18 @@
     float: left;
     height: 60px;
 }
-body{
-    background-image:url(images/6977000.webp);
+.cont{
+    background-image: url(images/6977000.webp);
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% ;
+    background-size: cover;
 }
 .teams-field{
     width: auto;
     height: auto;
-    background-color: rgba(0, 0, 0, 0.301);
-    
-    
+    margin-left: auto;
+    margin-right: auto;
+
 }
 .teams-logo{
     width: 200px;
@@ -51,40 +53,54 @@ body{
 .batn{
     width: 30%;
 }
+.card{
+    background-color: rgba(2, 2, 0, 0.5);
+}
+
 
 </style>
 
 
+  <header class="p-3 bg-warning text-white ">
+    <div class="container ">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="#" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+          <img class="bi me-2" src="images/fifa.png" width="160" height="60">
+        </a>
 
-
-<header class="header bg-warning">
-    <div class="logo bg-warning"><img src="images/fifa.png" class="logo"></div>
-    <div class="title bg-warning fs-2">Random Team selector</div>
-</header>
+        <p class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 p-3 text-dark fs-2 fw-bold" style="margin-left: auto; margin-right: auto;">
+          Randome Team Genarator
+        </p>   
+    </div>  
+  </header>
 
 <body>
+    
+    <div class="container-fluid cont " >
+        
+      
+        <div class="row row-bg justify-content-center p-4">
+      
+      
+            <div class="col-sm-8 col-md-6 col-xl-3 col-lg-4 m-3 card p-3 ">
 
-    <div class="container-fluid ">
-        <div class="row  justify-content-center mt-5 mr-5 ml-5 ">
+                <div class="teams-field"><img src="images/1.png" class="teams-logo" id="team1"></div>
 
-            <div class="teams-field"><img src="images/1.png" class="teams-logo" id="team1"></div>
-            <div class="teams-field text-warning tt fs-2">VS</div>
-            <div class="teams-field"><img src="images/2.png" class="teams-logo" id="team2"></div>
+            </div>
+            
+            <div class="col-sm-8 col-md-6 col-xl-3 col-lg-4 m-3 card p-3 ">
+                <div class="teams-field text-dark tt fs-2 fw-bold">VS</div>
+            </div>
 
-        </div>
-        <div class="row  justify-content-center ">
-
-            <div class="teams-field fs-1 text-info"><p class="team-name">bayrn</p> </div>
-            <div class="teams-field text-info p-2 fs-2">&nbsp&nbsp&nbsp&nbsp&nbsp VS &nbsp&nbsp&nbsp&nbsp&nbsp</div>
-            <div class="teams-field fs-1 text-info"><p class="team-name"></p></div>
-
-        </div>
-        <div class="row  justify-content-center mt-5 mr-5 ml-5 ">
-
+            <div class="col-sm-8 col-md-6 col-xl-3 col-lg-4 m-3 card p-3 ">
+                <div class="teams-field"><img src="images/2.png" class="teams-logo" id="team2"></div>
+            </div>
+          
             <button type="submit" class="btn btn-dark batn" id="sub">Choose The Teams</button>
-
+      
+      
+          
         </div>
-
     </div>
 
 </body>
@@ -92,6 +108,5 @@ body{
 <footer></footer>
 
 </html>
-
 
 <script src="genarate.js"></script>
