@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Random Team</title>
+</head>
+
+<style>
+.header{
+    width: 100%;
+    height: auto;
+}
+.title{
+    color: black;
+    text-align: center;
+    height: 60px;
+    width: 65%;
+    font-weight: bold;
+    
+}
+.logo{
+    width: 35%;
+    float: left;
+    height: 60px;
+}
+body{
+    background-image:url(images/6977000.webp);
+    background-repeat: no-repeat;
+    background-size: 100% ;
+}
+.teams-field{
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.301);
+    
+    
+}
+.teams-logo{
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+}
+.tt{
+    text-align: center;
+    padding: 60px;
+}
+.batn{
+    width: 30%;
+}
+
+</style>
+
+
+
+
+<header class="header bg-warning">
+    <div class="logo bg-warning"><img src="images/fifa.png" class="logo"></div>
+    <div class="title bg-warning fs-2">Random Team selector</div>
+</header>
+
+<body>
+
+    <div class="container-fluid ">
+        <div class="row  justify-content-center mt-5 mr-5 ml-5 ">
+
+            <div class="teams-field"><img src="images/1.png" class="teams-logo" id="team1"></div>
+            <div class="teams-field text-warning tt fs-2">VS</div>
+            <div class="teams-field"><img src="images/2.png" class="teams-logo" id="team2"></div>
+
+        </div>
+        <div class="row  justify-content-center ">
+
+            <div class="teams-field fs-1 text-info"><p class="team-name">bayrn</p> </div>
+            <div class="teams-field text-info p-2 fs-2">&nbsp&nbsp&nbsp&nbsp&nbsp VS &nbsp&nbsp&nbsp&nbsp&nbsp</div>
+            <div class="teams-field fs-1 text-info"><p class="team-name"></p></div>
+
+        </div>
+        <div class="row  justify-content-center mt-5 mr-5 ml-5 ">
+
+            <button type="submit" class="btn btn-dark batn" id="sub">Choose The Teams</button>
+
+        </div>
+
+    </div>
+
+</body>
+
+<footer></footer>
+
+</html>
+
+
+<script src="genarate.js"></script>
